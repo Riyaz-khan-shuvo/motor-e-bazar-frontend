@@ -1,0 +1,36 @@
+.details-area .details-img{
+    overflow: hidden;
+    position: relative;
+}
+.details-overlay{
+    background: rgba(52, 73, 94,.7);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	right: 100%;
+	top: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 1s;
+}
+.details-area :hover .details-overlay{
+    right: 0;
+	top: 0;
+	color:  #fff;
+}
+.view-details{
+    color: green;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 9px 7px;
+    border-radius: 19px;
+}
+
+.details-img h5{
+    position: absolute;
+    top: 85%;
+    left: 10%;
+    font-weight: bold;
+    color: #fff;
+}
