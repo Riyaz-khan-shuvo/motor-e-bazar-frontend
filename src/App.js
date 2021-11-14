@@ -15,6 +15,7 @@ import OrderReview from "./Pages/OrderReview/OrderReview";
 import ShippingPage from "./Pages/ShippingPage/ShippingPage";
 import PrivateRoute from "./Pages/Login/PrivateRoute";
 import Contact from "./Pages/ContactPage/Contact";
+import UserDashboard from "./Pages/UserDashboard/UserDashboard";
 export const UserContext = createContext();
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
@@ -34,6 +35,9 @@ function App() {
           <Route path="/shop">
             <Shop />
           </Route>
+          <PrivateRoute path="/my-dashboard">
+            <UserDashboard />
+          </PrivateRoute>
           <Route path="/review">
             <OrderReview />
           </Route>

@@ -18,11 +18,12 @@ const OrderReview = () => {
         setCart(newCart);
         removeFromDb(key);
     }
+    console.log(cart)
 
     const handleProceedToShipping = () => {
         // setCart([]);
         // clearTheCart();
-        history.push('/shipping');
+        history.push('/my-dashboard');
     }
     return (
         <div>

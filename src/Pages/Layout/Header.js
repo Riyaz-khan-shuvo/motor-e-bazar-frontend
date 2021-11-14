@@ -62,7 +62,7 @@ const Header = () => {
                                         style={{ color: '#fff', fontWeight: '600', }}
                                         className="nav-link pl-4 pr-4"
                                     >
-                                        <Link to="/my-booking" style={{
+                                        <Link to="/my-dashboard" style={{
                                             color: "#fff", textDecoration: "none"
                                         }}
                                             className={currentRoute == '/my-dashboard' ? "nav-link nav-active" : "nav-link "}
