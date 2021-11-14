@@ -65,8 +65,8 @@ const Header = () => {
                                         <Link to="/my-booking" style={{
                                             color: "#fff", textDecoration: "none"
                                         }}
-                                            className={currentRoute == '/my-booking' ? "nav-link nav-active" : "nav-link "}
-                                        > My Booking </Link>
+                                            className={currentRoute == '/my-dashboard' ? "nav-link nav-active" : "nav-link "}
+                                        > My Dashboard </Link>
                                     </Nav.Link>
                                     <div>
                                         <span

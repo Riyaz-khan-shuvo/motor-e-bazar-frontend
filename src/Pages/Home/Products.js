@@ -6,16 +6,16 @@ const Products = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5500/products/')
+        fetch('https://salty-waters-44485.herokuapp.com/products/')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])
-    console.log(products)
+
 
     const addData = (e) => {
-        axios.post('http://localhost:5500/products', products)
+        axios.post('https://salty-waters-44485.herokuapp.com/products', products)
             .then(data => {
-                console.log(data)
+                
             })
 
         e.preventDefault();

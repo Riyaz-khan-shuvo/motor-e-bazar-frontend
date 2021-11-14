@@ -13,8 +13,6 @@ const OrderReview = () => {
     const [cart, setCart] = useCart(products);
     const history = useHistory();
 
-    console.log(products)
-
     const handleRemove = key => {
         const newCart = cart.filter(product => product.key !== key);
         setCart(newCart);

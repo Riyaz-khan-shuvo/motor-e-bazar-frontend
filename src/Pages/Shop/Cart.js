@@ -18,7 +18,6 @@ const Cart = (props) => {
     const tax = (total + shipping) * 0.10;
     const grandTotal = total + shipping + tax;
 
-    console.log('prosp', props)
     return (
         <div>
             <h3>Order Summary</h3>

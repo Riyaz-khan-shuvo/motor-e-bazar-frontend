@@ -13,7 +13,7 @@ const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useCart(products);
     useEffect(() => {
-        axios.get('http://localhost:5500/products')
+        axios.get('https://salty-waters-44485.herokuapp.com/products')
             .then(data => setProducts(data.data))
     }, [])
 
@@ -34,8 +34,6 @@ const Shop = () => {
         addToDb(product.key);
 
     }
-
-    console.log(cart)
     return (
         <div>
             <Layout>

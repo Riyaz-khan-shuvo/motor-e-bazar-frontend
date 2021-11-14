@@ -9,7 +9,7 @@ const SingleProduct = () => {
     const { key } = useParams()
 
     useEffect(() => {
-        axios.get(`http://localhost:5500/products/${key}`)
+        axios.get(`https://salty-waters-44485.herokuapp.com/products/${key}`)
             .then(data => setProduct(data.data))
     }, [key])
     return (
